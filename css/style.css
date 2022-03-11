@@ -4,26 +4,35 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
-.hero{
-	height: 100vh;
-	width: 100%;
-	background-color:rgb(255, 255, 255);
-	background-size: cover;
-	background-position: center;
+body{
+	background-color: #191919;
 }
-.logo{
-	color: white;
-	font-size: 35px;
-	letter-spacing: 1px;
-	cursor: pointer;
+.container{
+	width: 1220px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.first-banner{
+	flex: 1;
+}
+.second-banner{
+   flex: 1;
+}
+.second-banner img{
+	width: 80%;
+	margin-left: 80px;
 }
 span{
 	color: #f9004d;
 }
-
 .btn{
 	background-color:#f9004d;
-	color: rgb(20, 18, 18);
+	color: #fff;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -34,34 +43,18 @@ span{
 .btn:hover{
 	transform: scale(1.2);
 }
-.col-md-7{
-	position: absolute;
-	top: 50%;
-	left:8%;
-	transform: translateY(-50%);
-}
-.imgr{
-	width: 600px;
-	height: auto;
-
-}
-.col-md-5{
-	position: relative;
-	top: 140px;
-	left: 800px;
-}
 h1{
-	color: #000000;
+	color: #fff;
 	margin: 20px 0px 20px;
 	font-size: 75px;
 }
 h3{
-	color: rgb(14, 13, 13);
+	color: #fff;
 	font-size: 25px;
 	margin-bottom: 50px;
 }
 h4{
-	color: #121213cc;
+	color: #fff;
 	letter-spacing: 2px;
 	font-size: 20px;
 }
@@ -92,41 +85,24 @@ h4{
 	right: 6px; 
 }
 
-.about{
-	width: 100%;
-	padding: 100px 0px;
-	background-color: #191919;
+.second-banner img{
+	width: 80%;
 }
-.about img{
-	height: auto;
-	width: 430px;
-}
-.about-text{
-	width: 550px;
-}
-.main{
-	width: 1130px;
-	max-width: 95%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-.about-text h2{
+.first-banner h2{
 	color: white;
 	font-size: 75px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 }
-.about-text h5{
+.first-banner h5{
 	color: white;
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin-bottom: 25px;
 	text-transform: capitalize;
 }
-.about-text p{
-	color: #fcfc;
+.first-banner p{
+	color: #fff;
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
@@ -156,7 +132,6 @@ button:hover{
 .title h2{
 	color: white;
 	font-size: 75px;
-	width: 1130px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -190,8 +165,8 @@ h5{
 	font-size: 23px;
 	margin-bottom: 15px;
 }
-.pra p{
-	color: #fcfc;
+.text-title p{
+	color: #ffffff;
 	font-size: 16px;
 	line-height: 27px;
 	margin-bottom: 25px;
@@ -260,7 +235,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
 	color: white;
 	font-size: 17px;
-	width: 500px;
+	width: 100px;
 	text-align: center;
 	line-height: 26px;
 }
@@ -286,7 +261,19 @@ footer p:nth-child(2){
 }
 .end{
 	position: absolute;
-	color:#f9004d;
+	color: #ffff;
 	bottom: 35px;
 	font-size: 14px; 
+}
+@media only screen and (max-width:688px){
+	.container{
+		flex-direction: column;
+		width: 100%;
+	}
+	.first-banner{
+       margin-left: 50px;
+	}
+	.box{
+       flex-direction: column;
+	}
 }
